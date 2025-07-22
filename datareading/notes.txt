@@ -1,0 +1,101 @@
+Unit I: Introduction to Information Security (15
+ Hours)
+ 1. Introduction to Information Security
+  TheNeedforSecurity: As information is increasingly stored and transmitted
+ digitally, protecting it from unauthorized access, tampering, or theft is critical.
+ Security ensures trust in systems like online banking, e-commerce, and
+ communication platforms.
+ 1. The Need for Security:
+  Importance:
+ o Protects sensitive data: Personal (e.g., Social Security numbers),
+ financial (e.g., credit card details), organizational (e.g., trade secrets).
+ o Preventsfinancial loss: Cybercrime costs trillions annually (e.g., $6
+ trillion globally in 2021, per Cybersecurity Ventures).
+ o Ensurescompliance: Laws like GDPR, HIPAA mandate data protection.
+  ThreatLandscape:
+ o Cyberattacks: Hacking, phishing, ransomware.
+ o Physical threats: Theft of devices, natural disasters.
+ o Humanerrors:Misconfigured servers, weak passwords.
+ 2. Principles of Security (CIA Triad):
+  Confidentiality:
+ o Ensuresdata is only accessible to authorized users.
+ o Mechanism:Encryption (e.g., AES for encrypting files).
+ o Example:Ahospital encrypts patient records to prevent unauthorized
+ access.
+  Integrity:
+ o Ensuresdata is accurate and unaltered.
+ o Mechanism:Hashfunctions (e.g., SHA-256 to verify file integrity).
+ o Example:Abankuseschecksums toensure transaction data isn’t
+ tampered with.
+  Availability:
+ o Ensuresdata/systems are accessible when needed.
+ o Mechanism:Redundancy, DDoS protection.
+ o Example:Awebsite uses acontent delivery network (CDN) to stay
+ online during traffic spikes.
+ Additional Principles:
+ o Authenticity: Verifies the identity of users/systems (e.g., digital
+ certificates).
+ o Non-repudiation: Ensures parties cannot deny actions (e.g., digital
+ signatures).
+ 3. Types of Attacks:
+  PassiveAttacks:
+ o Goal:Gatherinformation without altering data.
+ o Example:Eavesdropping on unencrypted Wi-Fi to steal passwords.
+ o Defense:Use encryption (e.g., WPA3 for Wi-Fi).
+  ActiveAttacks:
+ o Goal:Alter or disrupt data/systems.
+ o Example:Man-in-the-middle (MITM) attack where an attacker
+ intercepts and modifies messages.
+ o Defense:Use secure protocols (e.g., HTTPS).
+  Virus:
+ o Malicious code that spreads by attaching to programs.
+ o Example:TheILOVEYOU virus (2000) spread via email, deleting files.
+ o Defense:Antivirus software, user education.
+  Worm:
+ o Self-replicating malware that spreads independently.
+ o Example:WannaCry (2017)exploited Windows vulnerabilities,
+ encrypting data for ransom.
+ o Defense:Patchmanagement, firewalls.
+  TrojanHorse:
+ o Malwaredisguised as legitimate software.
+ o Example:Afakebanking appthat steals credentials.
+ o Defense:Download software from trusted sources.
+ 4. Introduction to Cryptography:
+  Definition: The science of securing communication by converting plaintext
+ into ciphertext.
+  Goals:
+ o Confidentiality, integrity, authentication, non-repudiation.
+ Historical Context:
+ o Ancientcryptography: Caesar cipher used by Julius Caesar (shift
+ letters by a fixed number).
+ o WorldWarII: Enigmamachine usedby Germany, broken by Alan
+ Turing.
+  BasicTerms:
+ o Plaintext: Original message (e.g., “HELLO”).
+ o Ciphertext: Encrypted message (e.g., “KHOOR” with a Caesar shift of
+ 3).
+ o Key:Secret usedto encrypt/decrypt (e.g., shift value in Caesar cipher).
+  TypesofCryptography:
+ o Symmetric:Same key(e.g., AES).
+ o Asymmetric: Public/private keys (e.g., RSA).
+ o HashFunctions: Nokey (e.g., SHA-256).
+ 5. Steganography:
+  Definition: Hiding a message within another medium (e.g., an image, audio
+ file).
+  Example:
+ o Hideamessageinanimagebyaltering the least significant bits (LSBs)
+ of pixel values.
+ o Original pixel: 10110110 (182); Modified pixel: 10110111 (183) to hide
+ a bit.
+  ComparisonwithCryptography:
+ o Cryptography: Scrambles the message (visible but unreadable).
+ o Steganography: Hides the message’s existence (invisible).
+  Applications:
+ o Covertcommunication: Spies hiding messages in images.
+ o Digital watermarking: Embedding copyright info in media.
+ Diagram (Text Description):
+  Cryptographyvs. Steganography:
+ o Cryptography: Plaintext → [Encryption with Key] → Ciphertext →
+ [Decryption with Key] → Plaintext.
+o Steganography: Message → [Embed inImage] → Stego-Image →
+ [Extract from Image] → Message

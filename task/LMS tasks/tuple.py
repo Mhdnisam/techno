@@ -1,0 +1,5 @@
+data = (42, "hello", 3.14, False)
+print("First element:", data[0])
+print("Second element:", data[1])
+print("Third element:", data[2])
+print("Fourth element:", data[3])
